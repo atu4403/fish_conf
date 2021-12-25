@@ -1,4 +1,4 @@
-function zenncp
+function zenncp -d "tilのmdファイルを選択してzenn-hubにcopyする"
     fd '\.md$' /Users/atu/ghq/github.com/atu4403/til/ | fzf | read md
     set -l a_path /Users/atu/ghq/github.com/atu4403/zenn-hub/articles
     set -l filename $a_path/(basename $md)
